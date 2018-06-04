@@ -805,6 +805,7 @@ public:
           w.set_surface(Surface::kDirt);
 
         } else if (value.find("gravel") != std::string::npos ||
+                   value.find("fine_gravel") != std::string::npos ||
                    value.find("pebblestone") != std::string::npos ||
                    value.find("sand") != std::string::npos) {
           w.set_surface(Surface::kGravel);
