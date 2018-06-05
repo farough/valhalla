@@ -793,6 +793,7 @@ public:
           w.set_surface(Surface::kPavedRough);
 
         } else if (value.find("compacted") != std::string::npos ||
+                   value.find("fine_gravel") != std::string::npos ||
                    value.find("wood") != std::string::npos ||
                    value.find("boardwalk") != std::string::npos) {
           w.set_surface(Surface::kCompacted);
@@ -805,7 +806,6 @@ public:
           w.set_surface(Surface::kDirt);
 
         } else if (value.find("gravel") != std::string::npos ||
-                   value.find("fine_gravel") != std::string::npos ||
                    value.find("pebblestone") != std::string::npos ||
                    value.find("sand") != std::string::npos) {
           w.set_surface(Surface::kGravel);
