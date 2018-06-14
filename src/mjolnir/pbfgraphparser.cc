@@ -793,6 +793,7 @@ public:
           w.set_surface(Surface::kPavedRough);
 
         } else if (value.find("compacted") != std::string::npos ||
+                   value.find("fine_gravel") != std::string::npos ||
                    value.find("wood") != std::string::npos ||
                    value.find("boardwalk") != std::string::npos) {
           w.set_surface(Surface::kCompacted);
